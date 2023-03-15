@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base{
+    .container{
+        width: 100%;
+        max-width: 10rem;
+        margin: 0 auto;
+        padding: 1.5rem 0;
+    }
+} */
+
+.container{
+    max-width: 70rem;
+    width: 100%;
+    margin:0 auto;
+    padding: 0 .3rem;
+    isolation: isolate;
+   
+}
+
+@layer component{
+    .toggle__menu span{
+        width: 2rem;
+        height: .2rem;
+        background-color: white;
+        display: block;
+        border-radius: 5rem;
+    }
+    .toggle__menu span:nth-child(2){
+        margin: .2rem 0;
+    }
+    .header__nav ul{
+        @apply absolute bg-dark right-0 top-0 w-0 h-[100vh] overflow-hidden p-0;
+    }
+    .header__nav ul.open{
+        @apply w-[89%] p-[2rem];
+    }
+}
