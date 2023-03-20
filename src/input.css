@@ -3,38 +3,123 @@
 @tailwind utilities;
 
 /* @layer base{
-    .container{
-        width: 100%;
-        max-width: 10rem;
-        margin: 0 auto;
-        padding: 1.5rem 0;
-    }
+
 } */
 
 .container{
-    max-width: 70rem;
+    max-width: 73.5rem;
     width: 100%;
     margin:0 auto;
-    padding: 0 .3rem;
-    isolation: isolate;
+    padding: 0 1rem;
+    /* isolation: isolate; */
    
 }
 
-@layer component{
+@layer components{
     .toggle__menu span{
-        width: 2rem;
+        width: 1.5rem;
         height: .2rem;
         background-color: white;
         display: block;
         border-radius: 5rem;
     }
+
+    .btn{
+        @apply inline-block py-[.9rem] px-[1.5rem] text-center rounded-[2rem] cursor-pointer;
+    }
+
+    .btn__outline{
+        @apply inline-block py-[.9rem] px-[1.5rem] text-center rounded-[2rem] border border-solid cursor-pointer;
+    }
+
     .toggle__menu span:nth-child(2){
         margin: .2rem 0;
     }
+    .toggle__menu.open span:first-child{
+        @apply translate-x-0 translate-y-[10px] rotate-[225deg] ease-out duration-[.5s];
+    }
+    .toggle__menu.open span:nth-child(2){
+        @apply opacity-0
+    }
+    .toggle__menu.open span:last-child{
+        @apply translate-x-0 translate-y-[-3px] rotate-[-225deg] ease-out duration-[.5s];
+    }
     .header__nav ul{
-        @apply absolute bg-dark right-0 top-0 w-0 h-[100vh] overflow-hidden p-0;
+        @apply absolute bg-dark top-0 w-0 h-[100vh] overflow-hidden right-0 p-0 z-[999] lg:static lg:w-full lg:h-auto;
+    }
+    .header__nav ul li:not(:first-child),.header__nav ul li:not(:last-child){
+        @apply mx-[1rem] lg:mx-0 lg:ml-[2rem];
     }
     .header__nav ul.open{
-        @apply w-[89%] p-[2rem];
+        @apply w-[89%] h-[100vh] p-[2rem];
     }
+    .arjay.show{
+        @apply w-full;
+    }
+
+    .footer__content a:hover{
+        @apply text-green;
+    }
+
+    .footer__items i{
+        @apply duration-[.5s] ease-out cursor-pointer lg:hidden;
+    }
+    .footer__items i.open{
+        @apply rotate-[-180deg] duration-[.5s] ease-out;
+    }
+    .footer__items ul{
+        @apply absolute max-h-0 overflow-hidden lg:overflow-visible;
+    }
+    .footer__items ul.open{
+        @apply max-h-[25rem] duration-[.5s] ease-in relative;
+    }
+
+    .footer__social i:hover{
+        @apply text-green
+    }
+    .sub__usa i:hover{
+        @apply text-gray-500
+    }
+    .footer__sub a:hover{
+        @apply text-green
+    }
+
+
+
+
+    /* --------------------------------------------------------Developer-------------------------------------------------------------*/
+
+
+    .toggle__menuDev span{
+        width: 1.5rem;
+        height: .2rem;
+        background-color: white;
+        display: block;
+        border-radius: 5rem;
+    }
+
+    .toggle__menuDev span:nth-child(2){
+        margin: .2rem 0;
+    }
+    .toggle__menuDev.open span:first-child{
+        @apply translate-x-0 translate-y-[10px] rotate-[-45deg] ease-out duration-[.5s];
+    }
+    .toggle__menuDev.open span:nth-child(2){
+        @apply opacity-0
+    }
+    .toggle__menuDev.open span:last-child{
+        @apply translate-x-0 translate-y-[-3px] rotate-[45deg] ease-out duration-[.5s];
+    }
+
+    .headerDev__tabs2 ul{
+        @apply bg-dark2 w-full absolute top-[-30rem] z-[-1] duration-[.5s];
+    }
+    .headerDev__tabs2 ul.open{
+        @apply bg-dark2 absolute w-full top-[0] ease-in-out duration-[.5s];
+    }
+
+
+    
 }
+
+
