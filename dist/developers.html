@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Spotify - Developers</title>
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
-    <header class="headerDev bg-black">
+    <header class="headerDev bg-black w-full">
         <div class="headerDev__wrapper">
             <div class="headerDev__main__content flex justify-between items-center">
                 <div class="headerDev__content lg:flex ">
                     <div class="headerDev__banner px-[1rem] py-[1rem] flex items-center">
                         <img src="./img/logofinal.png" alt="" class="w-[7rem]">
-                        <h5 class="text-light text-[1.3rem] font-light">.for Developers</h5>
+                        <h5 class="text-light text-[1.3rem] font-light">for Developers</h5>
                     </div>
                     <div class="headerDev__tabs1 bg-dark2 hidden lg:block lg:bg-dark">
                         <ul class="text-light lg:flex">
-                            <li class="hover:text-green cursor-pointer px-[30px] py-[1.5rem] border-y-[.25px] border-gray-500"><a href="" class="text-[14px] ">DISCOVER</a></li>
-                            <li class="hover:text-green cursor-pointer px-[30px] py-[1.5rem] border-b-[.25px] border-gray-500"><a href="" class="text-[14px] border-b-[2.4px] border-green pb-[.4rem]">DOCS</a></li>
-                            <li class="hover:text-green cursor-pointer px-[30px] py-[1.5rem] border-b-[.25px] border-gray-500"><a href="" class="text-[14px] ">CONSOLE</a></li>
-                            <li class="hover:text-green cursor-pointer px-[30px] py-[1.5rem] border-b-[.25px] border-gray-500"><a href="" class="text-[14px] ">COMMUNITY</a></li>
-                            <li class="hover:text-green cursor-pointer px-[30px] py-[1.5rem] border-b-[.25px] border-gray-500"><a href="" class="text-[14px] ">DASHBOARD</a></li>
-                            <li class="hover:text-green cursor-pointer px-[30px] py-[1.5rem] border-b-[.25px] border-gray-500"><a href="" class="text-[14px] ">USE CASES</a></li>
+                            <li class="hover:text-green cursor-pointer px-[30px] py-[1.5rem]"><a href="" class="text-[14px] ">DISCOVER</a></li>
+                            <li class="hover:text-green cursor-pointer px-[30px] py-[1.5rem]"><a href="" class="text-[14px] border-b-[2.4px] border-green pb-[.4rem]" >DOCS</a></li>
+                            <li class="hover:text-green cursor-pointer px-[30px] py-[1.5rem]"><a href="" class="text-[14px] ">CONSOLE</a></li>
+                            <li class="hover:text-green cursor-pointer px-[30px] py-[1.5rem]"><a href="" class="text-[14px] ">COMMUNITY</a></li>
+                            <li class="hover:text-green cursor-pointer px-[30px] py-[1.5rem]"><a href="" class="text-[14px] ">DASHBOARD</a></li>
+                            <li class="hover:text-green cursor-pointer px-[30px] py-[1.5rem]"><a href="" class="text-[14px] ">USE CASES</a></li>
                         </ul>
                     </div>
                 </div>
@@ -37,19 +37,201 @@
                     </div>
                 </div>
             </div>
-            <div class="headerDev__tabs2 bg-dark2 relative
+            <div class="headerDev__tabs2
             lg:hidden">
                 <ul class="text-light">
                     <li class="hover:text-green cursor-pointer px-[30px] py-[1.5rem] border-y-[.25px] border-gray-500"><a href="" class="text-[14px] ">DISCOVER</a></li>
-                    <li class="hover:text-green cursor-pointer px-[30px] py-[1.5rem] border-b-[.25px] border-gray-500"><a href="" class="text-[14px] border-b-[2.4px] border-green pb-[.4rem]">DOCS</a></li>
+                    <li class="hover:text-green cursor-pointer px-[30px] py-[1.5rem] border-b-[.25px] border-gray-500"><a href="" class="text-[14px] border-b-[2.4px] border-green pb-[.4rem]" id="docsTab">DOCS</a></li>
                     <li class="hover:text-green cursor-pointer px-[30px] py-[1.5rem] border-b-[.25px] border-gray-500"><a href="" class="text-[14px] ">CONSOLE</a></li>
                     <li class="hover:text-green cursor-pointer px-[30px] py-[1.5rem] border-b-[.25px] border-gray-500"><a href="" class="text-[14px] ">COMMUNITY</a></li>
                     <li class="hover:text-green cursor-pointer px-[30px] py-[1.5rem] border-b-[.25px] border-gray-500"><a href="" class="text-[14px] ">DASHBOARD</a></li>
                     <li class="hover:text-green cursor-pointer px-[30px] py-[1.5rem] border-b-[.25px] border-gray-500"><a href="" class="text-[14px] ">USE CASES</a></li>
                 </ul>
             </div>
+            <div class="header__hoverDocs bg-dark2 w-full absolute">
+                <div class="hover__wrapper">
+                    <div class="hover__docs grid grid-cols-12  px-[3rem]">
+                        <div class="docs__item">
+                            <div class="docs__head">
+                                <img src="./img/developers/svgfiles header/general.svg" alt="" class="hover:brightness-[120%]">
+                                <h4 class="text-light font-[500] text-[14px] my-[.5rem]">GENERAL</h4>
+                            </div>
+                            <div class="docs__body text-light text-[14px]">
+                                <ul>
+                                    <li class=" mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-green">Development <br> Guides</a></li>
+                                    <li class=" mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-green">Design <br> Guidelines</a></li>
+                                    <li class=" mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-green">Accessibility <br> Guides</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="docs__item">
+                            <div class="docs__head">
+                                <img src="./img/developers/svgfiles header/vector2.svg" alt="" class="hover:brightness-[120%]">
+                                <h4 class="text-light font-[500] text-[14px] my-[.5rem]">WEB API</h4>
+                            </div>
+                            <div class="docs__body text-light text-[14px]">
+                                <ul>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-orange ">Quick Start</a></li>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-orange ">Guides</a></li>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-orange ">Libraries</a></li>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-orange ">Reference</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="docs__item">
+                            <div class="docs__head">
+                                <img src="./img/developers/svgfiles header/vector4.svg" alt="" class="hover:brightness-[120%]">
+                                <h4 class="text-light font-[500] text-[14px] my-[.5rem]">WEB <br> PLAYBACK SDK</h4>
+                            </div>
+                            <div class="docs__body text-light text-[14px]">
+                                <ul>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custviolet ">Quick Start</a></li>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custviolet ">Guide</a></li>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custviolet ">Reference</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="docs__item">
+                            <div class="docs__head">
+                                <img src="./img/developers/svgfiles header/ads_api.svg" alt="" class="hover:brightness-[120%] w-[32px]">
+                                <h4 class="text-light font-[500] text-[14px] my-[.5rem]">ADS API</h4>
+                            </div>
+                            <div class="docs__body text-light text-[14px]">
+                                <ul>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custlviolet">Quick Start</a></li>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custlviolet">Guides</a></li>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custlviolet">Reference</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="docs__item">
+                            <div class="docs__head">
+                                <img src="./img/developers/svgfiles header/vectorios.svg" alt="" class="hover:brightness-[120%] w-[32px]">
+                                <h4 class="text-light font-[500] text-[14px] my-[.5rem]">IOS</h4>
+                            </div>
+                            <div class="docs__body text-light text-[14px]">
+                                <ul>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custblue ">Quick Start</a></li>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custblue ">Guides</a></li>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custblue ">Reference</a></li>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custblue ">Download</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="docs__item">
+                            <div class="docs__head">
+                                <img src="./img/developers/svgfiles header/android.svg" alt="" class="hover:brightness-[120%]">
+                                <h4 class="text-light font-[500] text-[14px] my-[.5rem]">ANDROID</h4>
+                            </div>
+                            <div class="docs__body text-light text-[14px]">
+                                <ul>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custpink ">Quick Start</a></li>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custpink ">Guides</a></li>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custpink ">Reference</a></li>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custpink ">Download</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="docs__item">
+                            <div class="docs__head">
+                                <img src="./img/developers/svgfiles header/vector3.svg" alt="" class="hover:brightness-[120%]">
+                                <h4 class="text-light font-[500] text-[14px] my-[.5rem]">EMBEDS</h4>
+                            </div>
+                            <div class="docs__body text-light text-[14px]">
+                                <ul>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custdorange ">Quick Start</a></li>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custdorange ">Guides</a></li>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custdorange ">Terms</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="docs__item">
+                            <div class="docs__head">
+                                <img src="./img/developers/svgfiles header/hardware.svg" alt="" class="hover:brightness-[120%]">
+                                <h4 class="text-light font-[500] text-[14px] my-[.5rem]">COMMERCIAL <br> HARDWARE</h4>
+                            </div>
+                            <div class="docs__body text-light text-[14px]">
+                                <ul>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custdgreen ">Onboarding</a></li>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custdgreen ">Implementation</a></li>
+                                    <li class="mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-custdgreen ">Launch</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__hoverComm bg-dark2 w-full absolute">
+                <div class="hover__wrapper">
+                    <div class="hover__docs grid grid-cols-12 gap-[4rem]  px-[3rem]">
+                        <div class="comm__item ">
+                            <div class="comm__head cursor-pointer text-light hover:text-green">
+                                <img src="./img/developers/svgfiles header/comm/news.svg" alt="" class="w-[32px]">
+                                <h4 class=" font-[500] text-[14px] my-[.5rem]">NEWS</h4>
+                            </div>
+                        </div>
+                        <div class="comm__item ">
+                            <div class="comm__head cursor-pointer text-light hover:text-green">
+                                <img src="./img/developers/svgfiles header/comm/forum.svg" alt="" class="w-[32px]">
+                                <h4 class=" font-[500] text-[14px] my-[.5rem]">FORUM</h4>
+                            </div>
+                        </div>
+                        <div class="comm__item ">
+                            <div class="comm__head cursor-pointer text-light hover:text-green">
+                                <img src="./img/developers/svgfiles header/comm/showcase.svg" alt="" class="w-[32px]">
+                                <h4 class="  font-[500] text-[14px] my-[.5rem] ">SHOWCASE</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__hoverCases bg-dark2 w-full absolute">
+                <div class="hover__wrapper">
+                    <div class="hover__cases grid grid-cols-12  px-[3rem]">
+                        <div class="cases__item">
+                            <div class="cases__head">
+                                <img src="./img/developers/svgfiles header/mobileapps.svg" alt="" class="hover:brightness-[120%]">
+                                <h4 class="text-light font-[500] text-[14px] my-[.5rem]">MOBILE APPS</h4>
+                            </div>
+                            <div class="cases__body text-light text-[14px]">
+                                <ul>
+                                    <li class=" mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-green">Messaging</a></li>
+                                    <li class=" mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-green">Connection <br> Flow</a></li>
+                                    <li class=" mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-green">Contents</a></li>
+                                </ul>
+                            </div>
+                        </div>                        
+                        <div class="cases__item">
+                            <div class="cases__head">
+                                <img src="./img/developers/svgfiles header/vector99.svg" alt="" class="hover:brightness-[120%]">
+                                <h4 class="text-light font-[500] text-[14px] my-[.5rem]">MOBILE APPS</h4>
+                            </div>
+                            <div class="cases__body text-light text-[14px]">
+                                <ul>
+                                    <li class=" mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-green">Voice <br> Integrations</a></li>
+                                    <li class=" mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-green">New & Emerging <br> Flow</a></li>
+                                    <li class=" mt-[.5rem]"><a href="#" class="cursor-pointer hover:text-green">Wearables</a></li>
+                                </ul>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            
         </div>
     </header>
+
+    <section class="platform py-[2rem] ">
+        <div class="platform__wrapper max-w-[90rem] mx-auto">
+            <div class="platform__head">    
+                <h1 class="text-[3.5rem] font-bold text-dark2 leading-[1.15] lg:text-[6rem] ">Platform Documentation</h1>
+                <p> You'll find handy documentation about our APIs and SDKs. Choose below, or scroll down to select by feature.</p>
+                <img src="" alt="" class="bg-red-500">
+            </div>
+            <div class="platform__items"></div>
+        </div>
+    </section>
 
     <script src="./script.js"></script>
     
